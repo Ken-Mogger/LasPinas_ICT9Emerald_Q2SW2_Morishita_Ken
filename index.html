@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+
+        body{
+            background-image: url('NoWAY.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: white; 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%; 
+            max-width: 600px; 
+            margin: auto; 
+        
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1 class="text-center"> Robotics Club Registration</h1>
+        <p class="text-center"> Join us to explore the world of robotics! </p>
+
+        <form>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+                    <div class ="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tell" class="form-control" id="phone" required>
+                    </div>
+
+                    <fieldset class="mb-3">
+                        <legend>Topics of Interest</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="topic1">
+
+                            <label class="form-check-label" for="topic1">Robotics Basics</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="topic2">
+                        <label class="form-check-label" for="topic2">Programming</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="topic3">
+                        <label class="form-check-label" for="topic3">Electronics</label>
+                    </div>
+
+                    </fieldset>
+
+                    <fieldset class="mb-3">
+                        <legend>Level of Experience</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="level" id="beginner" value="beginner">
+                            <label class=form-check-label for="beginner">Beginner</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="level" id="intermediate" value="intermediate">
+                            <label class="form-check-label" for="intermediate">Intermediate</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="level" id="advanced" value="advanced">
+                            <label class="form-check-label" for="advanced">Advanced</label>
+                        </div>
+
+                        </fieldset>
+
+                        <div class='mb-3'>
+                            <label for='projects' class='form-label'>Select a Project</label>
+                            <select id='projects' class='form-select'>
+                                <option selected>Choose...
+                                <option value='1'>Robot Arm</option>
+                                <option value='2'>Autonomous Vehicle</option>
+                                <option value='3'>Drone Technology</option>
+                            </select>
+                        </div>
+
+                        <div class='mb-3'>
+                            <label for='reason' class='form-label'>Reason for Joining</label>
+                            <textarea id='reason' rows='4' class='form-control'></textarea>
+                        </div>
+
+                            <button type='submit' class='btn btn-primary'>Submit</button>
+                        
+                        </form>
+
+                            <!-- Include Bootstrap JS -->
+                            <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+
+                        </div>
+
+
+
+
+
+        </form>
+</body>
+</html>
